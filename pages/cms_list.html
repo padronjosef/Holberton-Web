@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="https://padronjose.com">
+        <img class="logo" src="/assets/icons/logo.svg" alt="" />
+      </a>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a class="nav_a_active" href="">CMD List</a>
+        <a href="./quiz.html">Quiz</a>
+        <span class="br"></span>
+        <a href="./programs.html">Programs</a>
+      </nav>
+      <div>
+        <img class="logo" src="/assets/icons/facebook.svg" alt="" />
+        <img class="logo" src="/assets/icons/twitter.svg" alt="" />
+        <img class="logo" src="/assets/icons/instagram.svg" alt="" />
+      </div>
+    </header>
+    <main>
+      <Article class="wrapper">
+        <h1>Most used commands</h1>
+        <h4>
+          working directory (git add) -> storage area (git commit) -> git
+          repository
+        </h4>
+        <ul>
+          <li>git init = start a repository</li>
+          <li>git .gitignore = create a file to ignore files in the git</li>
+          <li>
+            git merge [branchname] = mix the branch on which it is written
+          </li>
+          <li>
+            origin of git merge / master --allow-non-related-stories = mix the
+            branch that is written with the branch and force
+          </li>
+          <li>
+            git cherry-pick [SHA-1] = move commit SHA-1 to the branch in which
+            it is
+          </li>
+        </ul>
+        <h4>Origin Commands Commands</h4>
+        <ul>
+          <li>remote git add source https or ssh = add source</li>
+          <li>remote git -v = look at the status</li>
+          <li>remote git remove origin = remove</li>
+          <li>remote git show origin = show origin</li>
+          <li>git remote set-url origin = change remote</li>
+        </ul>
+        <h4>Fetch, Pull and Push Commands</h4>
+        <ul>
+          <li>
+            git fetch origin master = bring "origin" data from the "master"
+            branch
+          </li>
+          <li>
+            git pull origin master = brings the "origin" changes of the "master"
+            branch and makes a merge
+          </li>
+          <li>
+            git push origin master = send the changes to the "origin" repository
+            to the "master" branch
+          </li>
+          <li>git push origin master --tags = send tags</li>
+          <li>git push RD source = send the RD name branch</li>
+        </ul>
+        <h4>Checkout Commands</h4>
+        <ul>
+          <li>git chechout [branchname] = move to branch</li>
+          <li>git checkout [SHA-1] = move to commit</li>
+          <li>git checkout - [filename.ext] = delete file changes</li>
+          <li>git checkout -b [branchname] = create branch and move to it</li>
+        </ul>
+        <h4>Branch Commands</h4>
+        <ul>
+          <li>git branch [branchname] = a new branch is created</li>
+          <li>git branch -d = delete branch</li>
+          <li>branch git -D = force the borrowing of the branch</li>
+          <li>git branch -l = list branches</li>
+          <li>git branch -m [branchname] [newname] = rename branches</li>
+        </ul>
+        <h4>Stash Commands</h4>
+        <ul>
+          <li>git stash = save the status of that branch</li>
+          <li>git stash list = look at all stash</li>
+          <li>
+            git stash drop stash @ {0} = delete stash from the number between {}
+          </li>
+          <li>git stash apply = apply the last stash</li>
+          <li>
+            git stash apply stash @ {0} = apply the selected stash among the {}
+          </li>
+        </ul>
+        <h4>Log Commands</h4>
+        <ul>
+          <li>git log = show information about sent shipments</li>
+          <li>git log --oneline = put everything more summarized</li>
+          <li>
+            git log --oneline --graph = put everything more summarized with *
+          </li>
+          <li>git log -1 = -1 is the log number</li>
+        </ul>
+        <h4>Diff Commands</h4>
+        <ul>
+          <li>
+            git diff [commit or SHA-1] = compare what has changed between the
+            current version and the commit
+          </li>
+          <li>
+            git diff [commit / SHA-1 vs commit / SHA-1] = compares what has
+            changed between version 1 versus version 2
+          </li>
+        </ul>
+        <h4>Add and Remove Files Commands</h4>
+        <ul>
+          <li>git status = Shows the status of files or directories</li>
+          <li>git touch [file or directory] = create file</li>
+          <li>
+            git add [file or directory] = add files from the working directory
+            -> preparation area
+          </li>
+          <ul>
+            <li>-A = add all</li>
+            <li>-u = add modified and deleted files, but NOT created ones</li>
+            <li>
+              <strong>.</strong> = add files created and modified, but NOT
+              deleted
+            </li>
+            <li>
+              -n [file or directory] = Simulates the addition of a file or
+              directory to the Preparation Area but the truth does not
+            </li>
+          </ul>
+          <li>
+            git rm --cached [file or directory] = Remove a file or folder from
+            the storage area and leave it in the Working Directory
+          </li>
+          <li>
+            git rm --f [file or directory] =deletes it from the Work Directory.
+          </li>
+        </ul>
+        <h4>Commits Commands</h4>
+        <ul>
+          <li>
+            git commit -m "comment" = to add new commit (you must first do git
+            add [file or firectory])
+          </li>
+          <li>
+            git commit -am "comment" = but this only works for modified and
+            deleted files, not for newly added files
+          </li>
+          <li>
+            git git commit --amend = concatenates new changes to the last commit
+          </li>
+          <li>
+            git git commit --amend -m "comment" = equal to --amend but changing
+            the comment of the last commit
+          </li>
+          <span>esc ->: wq</span>
+        </ul>
+        <h4>Reset Commands <span class="warning">(be careful)</span></h4>
+        <ul>
+          <li>git reset = reset the commit before saving it</li>
+          <li>
+            git reset --soft [SHA-1] = eliminates changes to the preparation
+            area
+          </li>
+          <li>
+            git reset --mixed [SHA-1] = removes changes until the work area
+            deletes changes from the repository and preparation area
+          </li>
+          <li>git reset --hard [SHA-1] = return to the commit of [SHA-1]</li>
+        </ul>
+        <h4>Tag Commands</h4>
+        <ul>
+          <li>git tag 1.0 SHA-1 = make a light tag</li>
+          <li>git tag -a 1.0 -m "stable version" = make an annotated tag</li>
+          <li>git tag -d = delete tags</li>
+          <li>git tag -l = see all tags</li>
+          <li>git tag -f -a 0.1 -m "comment" SHA1 = rename tag</li>
+          <span>
+            SHA-1 = 172f92b2254eb3a481611ace32f8a69919d0b51d
+          </span>
+        </ul>
+      </Article>
+    </main>
+    <footer>
+      <img class="vh" src="/assets/icons/github.svg" alt="" />
+      <div>
+        Made by &nbsp;
+        <a href="https://padronjose.com"> josePadronF </a> &nbsp; for &nbsp;
+        <a href="https://www.holbertonschool.com">Holberton School</a>
+      </div>
+      <img class="logo" src="/assets/icons/github.svg" alt="" />
+    </footer>
+  </body>
+</html>

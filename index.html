@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jose's Blog</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/assets/icons/favicon.png"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="https://padronjose.com">
+        <img class="logo" src="/assets/icons/logo.svg" alt="" />
+      </a>
+      <nav>
+        <a class="nav_a_active" href="">Home</a>
+        <a href="/pages/cms_list.html">CMD List</a>
+        <a href="/pages/quiz.html">Quiz</a>
+        <span class="br"></span>
+        <a href="/pages/programs.html">Programs</a>
+      </nav>
+      <div>
+        <img class="logo" src="/assets/icons/facebook.svg" alt="" />
+        <img class="logo" src="/assets/icons/twitter.svg" alt="" />
+        <img class="logo" src="/assets/icons/instagram.svg" alt="" />
+      </div>
+    </header>
+    <main>
+      <Article class="wrapper">
+        <a href="https://github.com/">
+          <img class="img_tutorial" src="/assets/Imagenes/Header.png" alt="" />
+        </a>
+        <h1>Git and Github</h1>
+        <p>
+          &nbsp;To sum up Git is a version control system. It's just a fancy way
+          of saying that instead of saving a version of each file, save only the
+          changes. Before Git, developers and programmers separated versions of
+          their projects in a manner similar to this:
+        </p>
+        <div class="img_wrapper">
+          <img class="img_tutorial" src="/assets/Imagenes/Imagen1.png" alt="" />
+          <br />
+          <span>If you have ever done a thesis this will seem familiar.</span>
+        </div>
+        <h2>What is wrong with this?</h2>
+        <p>
+          &nbsp;In practice it is extremely inefficient and the situation is
+          complicated when it is more than one person who is working and
+          modifying the files, not to mention the size it occupies on the hard
+          disk.
+        </p>
+        <p>
+          To solve this problem, Git was born.
+        </p>
+        <div class="img_wrapper">
+          <img class="img_tutorial" src="/assets/Imagenes/Imagen2.png" alt="" />
+          <br />
+          <span
+            >This is how a project with Git looks, much cleaner, right?</span
+          >
+        </div>
+        <h2>What is GitHub?</h2>
+        <p>
+          &nbsp;It is a social network for developers or programmers based on
+          Git. Like Facebook or Instagram, but instead of sharing photos or
+          videos, we share code.
+        </p>
+        <p>It also serves to back up information.</p>
+        <h4>Necessary requirements</h5>
+        <ul>
+          <li>
+            If you know how to turn on a computer, you are already more than
+            qualified to use Git and GitHub
+          </li>
+          <li>Download Git</li>
+          <li>Download Visual Studio Code.</li>
+          <li>Create a user on GitHub.</li>
+          <li>Set up to see hidden files and file extensions.</li>
+        </ul>
+
+        <h3>Configure github for the first time</h3>
+        <ul>
+          <li>git config --global user.name "John Doe"</li>
+          <li>git config --global user.email johndoe@example.com</li>
+          <li>
+            to create SSD key = ssh-keygen -t rsa -b 4096 -C
+            "johndoe.go@mail.com"
+          </li>
+          <li>clip <~ / .ssh / id_rsa.pub = in windows</li>
+          <li>pbcopy <~ / .ssh / id_rsa.pub</li>
+          <li>git config --global --edit</li>
+          <li>git config --global --list</li>
+        </ul>
+        <h3>To push the first commit</h3>
+        <ul>
+          <li>git init</li>
+          <li>git add README.md</li>
+          <li>git commit -m "first commit"</li>
+          <li>git remote add origin git@github.com: user / repository.git</li>
+          <li>git push -u origin master</li>
+        </ul>
+      </Article>
+    </main>
+    <footer>
+      <img class="vh" src="/assets/icons/github.svg" alt="" />
+      <div>
+        Made by &nbsp;
+        <a href="https://padronjose.com"> josePadronF </a> &nbsp; for
+        &nbsp;
+        <a href="https://www.holbertonschool.com">Holberton School</a>
+      </div>
+      <img class="logo" src="/assets/icons/github.svg" alt="" />
+    </footer>
+  </body>
+</html>
