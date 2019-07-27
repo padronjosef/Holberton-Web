@@ -36,6 +36,21 @@ li {
   padding-bottom: 0.2rem;
 }
 
+main {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+aside {
+  width: 25vw;
+  position: fixed;
+  right: 5vw;
+  top: 4rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
 .warning {
   color: #ff070c;
 }
@@ -68,7 +83,7 @@ nav {
 
 nav a {
   color: #f2f2f2;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 550;
   text-decoration: none;
   display: inline-block;
@@ -80,7 +95,7 @@ nav a {
   border-right: 3px solid #f2f2f2;
   margin-right: 2rem;
   padding-right: 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 nav a:after {
@@ -109,11 +124,6 @@ nav a:hover:after {
   color: #3362c0;
 }
 
-main {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-}
-
 .logo {
   height: 2rem;
   padding: 0.5rem 0.8rem;
@@ -135,13 +145,15 @@ main {
 
 .vh {
   visibility: hidden;
+  padding: 0;
+  margin: 0;
+  height: 0;
 }
 
 footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0rem;
   font-size: 1.2rem;
   text-align: center;
   background-image: linear-gradient(to left, #373f47, #12425b);
@@ -151,12 +163,4 @@ footer {
 footer a {
   text-decoration: none;
   color: #3362c0;
-  width: 100%;
-  font-weight: 900;
-}
-
-footer img {
-  height: 2rem;
-  padding: 0;
-  margin: 0;
 }
